@@ -6,11 +6,12 @@ import java.util.Properties;
 import org.testing.testSteps.HTTPMethods;
 import org.testing.utilities.JsonHandle;
 import org.testing.utilities.PropertiesHandle;
+import org.testng.annotations.Test;
 
 public class TC1_PostMethod {
 	
-	
-	public static void main (String [] args) throws IOException
+	@Test
+	public void postMethodTest () throws IOException
     {
     	
 		Properties pr = PropertiesHandle.loadProperties("../Practice_Framework_API/Uri.properties");
